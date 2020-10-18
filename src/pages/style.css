@@ -1,0 +1,126 @@
+/* position, padding, and min-height needed to make footer work */
+body {
+    position: relative;
+    background-image: url(../images/bodybg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 60px;
+    min-height: 100vh;
+}
+
+.navbar {
+    min-height: 80px;
+}
+
+/* adjust margins for spacing between jumbotron and navbar */
+.jumbotron {
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.selfportrait {
+    float: left;
+    margin-right: 15px;
+    width: 400px;
+}
+
+/* center contents within columns */
+.col-sm-6 {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin-bottom: 20px;
+    width: 15rem;
+    height: 12rem;
+}
+
+/* setting properties for background images in cards */
+.card-body {
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-size: 15rem 12rem;
+    background-color: aquamarine;
+}
+
+.btn {
+    align-items: center;
+    width: 100%;
+}
+
+/* a:visited {
+    color: white
+} */
+
+/* background image placeholders for cards */
+/* .port1 {
+    background-image: url(images/pwgenbg.jpg);
+}
+
+.port2 {
+    background-image: url(Images/jsquizbg.webp);
+}
+
+.port3 {
+    background-image: url(Images/workdayschedulerbg.jpg);
+}
+
+.port4 {
+    background-image: url(Images/weatherdashboardbg.jpg);
+}
+
+.port5 {
+    background-image: url(Images/dinnerdeciderbg.jpg);
+}
+
+.port6 {
+    background-image: url(Images/beerbg.jpg);
+} */
+
+form {
+    margin-bottom: 50px;
+}
+
+.contactmelinks ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.contactmelinks li {
+    display: inline-block;
+    margin: 0px 25px;
+}
+
+/* CSS to make footer go all the way to the bottom of page, relative to body */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+#emailLink {
+    color: white
+}
+
+/* further adjustments to jumbotron margins for when navbar collapses */
+@media (max-width: 576px) {
+    .jumbotron {
+        margin-top: 20%;
+        margin-right: auto;
+    }
+}
+
+/* remove/adjust extra padding from bootstrap's default jumbotron padding values */
+@media (min-width: 576px) {
+    .jumbotron {
+    padding: 5%;
+    }
+}
+
